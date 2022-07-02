@@ -1,16 +1,12 @@
-import type { NextPage } from 'next'
-import Link from 'next/link'
+import type { NextPage } from 'next';
+import Header from '../components/header/';
+
 
 const Home: NextPage = () => {
   return (
     <>
-    <header>
-      <ul>
-        <li><Link href='/'>Home</Link></li>
-        <li><Link href='/blog'>Blog</Link></li>
-        <li><Link href='/users'>Users</Link></li>
-      </ul>
-    </header>
+    <Header />
+    <h1>Welcome Gempur</h1>
     </>
   )
 }

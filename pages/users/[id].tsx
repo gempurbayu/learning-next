@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import Layout from '../../components/layouts'
 
 
@@ -15,7 +14,6 @@ interface UserDetailProps {
 }
 
 export default function DynamicDetail(props: UserDetailProps) {
-    const router = useRouter();
     const { user } = props;
     return (
     <Layout>
@@ -38,7 +36,7 @@ export async function getStaticPaths() {
     }));
     return {
         paths,
-        fallback: true,
+        fallback: false,
     }
 }
 
